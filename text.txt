@@ -1,0 +1,107 @@
+Rose
+Jasmine
+Bougainvillea
+Hibiscus
+Geranium
+Oleander
+Iris
+Pansy
+Petunia
+Marigold
+Sunflower
+Zinnia
+Daffodil
+Narcissus
+Tulip
+Hyacinth
+Fuchsia
+Lavender
+Sage
+Mint
+Basil
+Thyme
+Oregano
+Rosemary
+Chives
+Parsley
+Coriander
+Cactus
+Aloe vera
+Pothos
+Spider plant
+Snake plant
+Dracaena
+Peace lily
+English ivy
+Croton
+Ficus
+Rubber plant
+Amaryllis
+Cyclamen
+Chrysanthemum
+Delphinium
+Phlox
+Sweet pea
+Gardenia
+Stock
+Fritillaria
+Crocus
+Scabiosa
+Anemone
+
+
+[  {    "id": 18,    "name": "Lavender",    "category": "Herbs",    "description": "Lavender is a fragrant herb that is commonly used in perfumes, soaps, and other personal care products.",    "price": 6.99,    "availability": "In Stock",    "size": "Medium",    "light_requirements": "Full Sun",    "watering_requirements": "Low Water",    "soil_type": "Well-Draining",    "img": ""  },  {    "id": 19,    "name": "Sage",    "category": "Herbs",    "description": "Sage is a popular herb that is often used in cooking, particularly in Mediterranean and Middle Eastern cuisines.",    "price": 5.99,    "availability": "In Stock",    "size": "Small",    "light_requirements": "Full Sun",    "watering_requirements": "Low Water",    "soil_type": "Well-Draining",    "img": ""  },  {    "id": 20,    "name": "Mint",    "category": "Herbs",    "description": "Mint is a versatile herb that is commonly used in teas, desserts, and other culinary creations.",    "price": 4.99,    "availability": "In Stock",    "size": "Small",    "light_requirements": "Partial Sun",    "watering_requirements": "Moderate Water",    "soil_type": "Moist",    "img": ""  },  {    "id": 21,    "name": "Basil",    "category": "Herbs",    "description": "Basil is a fragrant herb that is used in a variety of cuisines, including Italian, Thai, and Vietnamese.",    "price": 7.99,    "availability": "In Stock",    "size": "Medium",    "light_requirements": "Full Sun",    "watering_requirements": "Moderate Water",    "soil_type": "Well-Draining",    "img": ""  }]
+
+{
+   "id":18,
+   "name":"Lavender",
+   "category":"Herbs",
+   "description":"Lavender is a fragrant herb that is commonly used in perfumes, soaps, and other personal care products.",
+   "price":6.99,
+   "availability":"In Stock",
+   "size":"Medium",
+   "light_requirements":"Full Sun",
+   "watering_requirements":"Low Water",
+   "soil_type":"Well-Draining",
+   "img":""
+},
+{
+   "id":19,
+   "name":"Sage",
+   "category":"Herbs",
+   "description":"Sage is a popular herb that is often used in cooking, particularly in Mediterranean and Middle Eastern cuisines.",
+   "price":5.99,
+   "availability":"In Stock",
+   "size":"Small",
+   "light_requirements":"Full Sun",
+   "watering_requirements":"Low Water",
+   "soil_type":"Well-Draining",
+   "img":""
+},
+{
+   "id":20,
+   "name":"Mint",
+   "category":"Herbs",
+   "description":"Mint is a versatile herb that is commonly used in teas, desserts, and other culinary creations.",
+   "price":4.99,
+   "availability":"In Stock",
+   "size":"Small",
+   "light_requirements":"Partial Sun",
+   "watering_requirements":"Moderate Water",
+   "soil_type":"Moist",
+   "img":""
+},
+{
+   "id":21,
+   "name":"Basil",
+   "category":"Herbs",
+   "description":"Basil is a fragrant herb that is used in a variety of cuisines, including Italian, Thai, and Vietnamese.",
+   "price":7.99,
+   "availability":"In Stock",
+   "size":"Medium",
+   "light_requirements":"Full Sun",
+   "watering_requirements":"Moderate Water",
+   "soil_type":"Well-Draining",
+   "img":""
+}
+]
