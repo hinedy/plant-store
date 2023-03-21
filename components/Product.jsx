@@ -16,6 +16,7 @@ export default function Product({plant}){
         <h3 className="mt-4 text-lg text-black-700">{plant.name}</h3>
         <p className="text-xs text-gray-600">{plant.description}</p>
         <p className="mt-1 text-lg font-medium text-gray-900">{plant.price}</p>
+        <p className="text-xs italic text-gray-600">{plant.availability}</p>
       </a>
     )
 }

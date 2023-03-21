@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Head from "next/head";
+import Footer from "./Footer";
 
 function Layout({children}) {
     return (
@@ -10,9 +11,12 @@ function Layout({children}) {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Header></Header>
-        <div className="px-10 py-10 flex justify-center">
-            {children}
+        <div className="flex flex-col justify-between min-h-screen ">
+            <Header></Header>
+            <main className="px-10 py-10 flex justify-center">
+                {children}
+            </main>
+            <Footer></Footer>
         </div>
         </>
     )
