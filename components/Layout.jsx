@@ -13,7 +13,7 @@ function Layout({children}) {
         </Head>
         <div className="flex flex-col justify-between min-h-screen ">
             <Header></Header>
-            <main className="px-10 py-10 flex justify-center">
+            <main >
                 {children}
             </main>
             <Footer></Footer>
