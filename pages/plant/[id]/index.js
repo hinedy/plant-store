@@ -1,21 +1,58 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 function Plant({plant}) {
     const router = useRouter()
     const {id} = router.query
-    return (
+    const {
+        img,
+        name,
+        category,
+        description,
+        price,
+        availability,
+        size,
+        light_requirements: lightRequirements,
+        watering_requirements: wateringRequirements,
+        soil_type: soilType
 
-        <>
-            <h1>{plant.name}</h1>
-            <p>This is plant number {id}</p>
-        </>
+    } = plant
+    return (
+        <div className="grid md:grid-cols-5 md:gap-x-6">
+            <div className="relative md:col-span-2 max-w-lg mx-6 h-[500px]">
+                <Image   
+                    src={img}
+                    alt={`${name} image`}
+                    placeholder="empty"
+                    fill
+                    style={{objectFit: "cover"}}
+                ></Image>            
+            </div>
+            <div className="md:col-span-2 p-6">
+                <h1 className="text-lg font-bold">{name}</h1>
+                <p>{description}</p>
+                <p>Category: {category}</p>
+                <p>Size: {size}</p>
+                <p>Light Requirements: {lightRequirements}</p>
+                <p>Watering Requirements: {wateringRequirements}</p> 
+                <p>Soil Type: {soilType}</p> 
+            </div>
+            <div className="md:col-span-1 p-6 flex flex-col">
+                <div className="flex flex-row justify-between w-full px-5">
+                    <p>{price}</p> 
+                    <p>{availability}</p> 
+                </div>
+                
+                <button className="rounded-full self-center m-10 px-4 py-1 bg-black text-white text-sm" type="button">Add To Cart</button>
+
+            </div>
+        </div>
     );
 }
 
 export async function getStaticProps(context){
     const res = await fetch(`http://localhost:3000/api/plants/${context.params.id}`)
     const plant = await res.json()
-    console.log(plant)
     return {
         props: {
           plant
