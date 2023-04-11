@@ -18,7 +18,7 @@ function CartItem(props) {
       </div>
       <div className="col-span-3 flex justify-between items-center px-1">
         <AmountControls {...props}></AmountControls>
-        <p>₹ {+props.price * +props.amount}</p>
+        <p>$ {+props.price * +props.amount}</p>
       </div>
     </div>
   );

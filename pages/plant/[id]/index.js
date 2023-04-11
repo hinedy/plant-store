@@ -1,7 +1,17 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useSelector, useDispatch } from "react-redux";
+import { addItem } from "@/features/cart/cartSlice";
+import AmountControls from "@/components/AmountControls";
+import Button from "@mui/material/Button";
+
 
 function Plant({plant}) {
+    
+    const { cartItems } = useSelector((state) => state.cart);
+    const inCart = cartItems.find((item) => plant.id === item.id);
+    const dispatch = useDispatch();
+
     const router = useRouter()
     const {id} = router.query
     const {
@@ -43,7 +53,21 @@ function Plant({plant}) {
                     <p>{availability}</p> 
                 </div>
                 
-                <button className="rounded-full self-center m-10 px-4 py-1 bg-black text-white text-sm" type="button">Add To Cart</button>
+                {inCart && inCart.amount >= 1 ? (
+                <AmountControls {...inCart}></AmountControls>
+                ) : (
+                <Button
+                    onClick={(e) => {
+                    
+                    dispatch(addItem({ ...plant, amount: 1 }));
+                    }}
+                    variant="outlined"
+                    size="small"
+                    color="primary"
+                >
+                    Add to Cart
+                </Button>
+                )}
 
             </div>
         </div>
