@@ -21,7 +21,7 @@ export default function Home({plants}) {
   return (
     <div className="px-10 py-10 flex justify-center">
       <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 lg:col-span-2 xl:grid-cols-3 xl:col-span-3 xl:gap-x-8">
+        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-1 lg:grid-cols-2 lg:col-span-2 xl:grid-cols-3 xl:col-span-3 xl:gap-x-8">
           {plants.map((plant,index )=> (
           <Product 
             key={index}
@@ -31,7 +31,7 @@ export default function Home({plants}) {
           </div>
         
         <div className='col-span-1 relative'>
-          <div className='fixed'>
+          <div className='sticky right-2 top-12'>
             <Cart></Cart>
 
           </div>

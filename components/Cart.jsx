@@ -9,7 +9,7 @@ function Cart() {
   return (
     <div className="flex flex-col  my-10 py-6  rounded-2xl bg-gray-50 ring-1 ring-inset ring-gray-900/5">
       {cartItems.length > 0 ? (
-        <div className="h-96 overflow-y-scroll overflow-x-hidden  mb-4 ">
+        <div className="max-h-80 overflow-y-scroll overflow-x-hidden  mb-4 ">
           {cartItems.map((item, index) => {
             return <CartItem key={index} {...item} />;
           })}
