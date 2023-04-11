@@ -4,6 +4,7 @@ import { clearCart } from "@/features/cart/cartSlice";
 
 function Cart() {
   const { cartItems, total } = useSelector((state) => state.cart);
+  console.log(total);
   const dispatch = useDispatch();
   return (
     <div className="flex flex-col  my-10 py-6  rounded-2xl bg-gray-50 ring-1 ring-inset ring-gray-900/5">
@@ -20,7 +21,7 @@ function Cart() {
       <div className="px-6">
         <div className="flex justify-between p-4">
           <h3>Total</h3>
-          <p>₹ {total}</p>
+          <p>$ {total}</p>
         </div>
         <button
           onClick={() => dispatch(clearCart())}
